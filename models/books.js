@@ -1,14 +1,14 @@
 //dependencies
 const mongoose = require("mongoose");
-const { Schema } = mongoose.model;
+const { Schema } = mongoose
 
 //dat Scheema
 const bookSchema = new Schema({
-	title: string,
-	description: string,
-	year: number,
-	quantity: number,
-	imagURL: string,
+	title: String,
+	description: String,
+	year: Number,
+	quantity: Number,
+	imagURL: String,
 });
 
 // export and model
