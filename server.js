@@ -8,18 +8,14 @@ require("dotenv").config();
 const PORT = process.env.PORT;
 app.use(express.json());
 
-// does it work check?
-
-
 // root index
 app.get("/", (req, res) => {
 	res.send("this is the landing page");
 });
 
 // books tho.
-
-const booksController = require("./controllers/booksController");
+const booksController = require("./controllers/booksController.js");
 app.use("/books", booksController);
 
-
+// does it work check?
 app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
